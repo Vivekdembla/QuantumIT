@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="20dp"
+    android:paddingRight="15dp"
+    android:layout_marginLeft="5dp">
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="@id/object_image"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/less_rounded"
+        android:backgroundTint="#FF0A23"
+        android:id="@+id/back"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/back"
+        app:layout_constraintRight_toRightOf="@id/back"
+        app:layout_constraintTop_toBottomOf="@id/object_image"
+        app:layout_constraintBottom_toBottomOf="@id/back"
+        android:gravity="center"
+        android:text="Up to 20% Off"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/deal"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/border_round"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:src="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/back"
+        app:layout_constraintRight_toRightOf="@id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/object_image"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
